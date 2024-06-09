@@ -8,3 +8,4 @@ Feature: blazedemo site test
     Given User navigate to blazedemo site
     And Click on the link
     Then validate the URL
+    When I click on link
