@@ -1,0 +1,2147 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@83e4e8776725a49f9e738b19d1e718e7404d6c19/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 5, 2023 09:54:38 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@WebAppTest</a><a class="dropdown-item" href="#">@FeatureTestTag</a><a class="dropdown-item" href="#">@MobileAppTest</a><a class="dropdown-item" href="#">@FeatureTestTag2</a><a class="dropdown-item" href="#">@MobileTest</a><a class="dropdown-item" href="#">@RegressionTest</a><a class="dropdown-item" href="#">@SmokeTest</a><a class="dropdown-item" href="#">@FeatureTestTag3</a><a class="dropdown-item" href="#">@SanityTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">blazedemo site test</p>
+            <p class="text-sm"><span>21:54:38 pm</span> / <span>0.071 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
+<h5 class="test-status text-fail">blazedemo site test</h5>
+<span class='badge badge-success'>09.05.2023 21:54:38</span>
+<span class='badge badge-danger'>09.05.2023 21:54:39</span>
+<span class='badge badge-default'>0.071 secs</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Navigate and Click Test</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.BlazeDemoSiteSteps.user_navigate_to_blazedemo_site()">
+                <span>Given User navigate to blazedemo site</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
+	at StepDefinition.BlazeDemoSiteSteps.user_navigate_to_blazedemo_site(BlazeDemoSiteSteps.java:11)
+	at ✽.User navigate to blazedemo site(classpath:features/BlazeDemoSiteTest.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BlazeDemoSiteSteps.verify_the_title_displayed()">
+                <span>Then Verify the title displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Navigate and Click Test</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.BlazeDemoSiteSteps.user_navigate_to_blazedemo_site()">
+                <span>Given User navigate to blazedemo site</span>
+      <div>
+        <textarea disabled class="code-block">io.cucumber.java.PendingException: TODO: implement me
+	at StepDefinition.BlazeDemoSiteSteps.user_navigate_to_blazedemo_site(BlazeDemoSiteSteps.java:11)
+	at ✽.User navigate to blazedemo site(classpath:features/BlazeDemoSiteTest.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BlazeDemoSiteSteps.click_on_the_link()">
+                <span>And Click on the link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.BlazeDemoSiteSteps.validate_the_url()">
+                <span>Then validate the URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Opencart Application LoginTest</p>
+            <p class="text-sm"><span>21:54:39 pm</span> / <span>0.137 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=13</span></div>
+<h5 class="test-status text-fail">Opencart Application LoginTest</h5>
+<span class='badge badge-success'>09.05.2023 21:54:39</span>
+<span class='badge badge-danger'>09.05.2023 21:54:39</span>
+<span class='badge badge-default'>0.137 secs</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Opencart Login</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartBasics2.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>Opencart Signup</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartBasics2.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Opencart Application Login</p>
+            <p class="text-sm"><span>21:54:39 pm</span> / <span>0.241 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=36</span></div>
+<h5 class="test-status text-fail">Opencart Application Login</h5>
+<span class='badge badge-success'>09.05.2023 21:54:39</span>
+<span class='badge badge-danger'>09.05.2023 21:54:39</span>
+<span class='badge badge-default'>0.241 secs</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log fail-bg mr-2">Fail</span>Opencart Login</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartHooks.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>Opencart Login with Valid Username and Password</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartLoginTest.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log fail-bg mr-2">Fail</span>Opencart Login with Invalid Username and Password</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartLoginTest.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log fail-bg mr-2">Fail</span>Opencart registration</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartLoginTest.feature:31)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When User click on register button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then User should navigate to regisration page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>When User enter basic inromation</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>And User click on register button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>Then User should get registered on Opencart site</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log fail-bg mr-2">Fail</span>Opencart SignUp</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="82"><span class="badge log fail-bg mr-2">Fail</span>Opencart SignUp</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartParameterization.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters Username1 and Password1</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="87"><span class="badge log fail-bg mr-2">Fail</span>Opencart SignUp</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartParameterization.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters Username2 and Password2</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="92"><span class="badge log fail-bg mr-2">Fail</span>Opencart SignUp</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartParameterization.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters Username3 and Password3</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="97"><span class="badge log fail-bg mr-2">Fail</span>Opencart SignUp</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartParameterizationPart2.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_below_details(io.cucumber.datatable.DataTable)">
+                <span>When User enters below details</span>
+      <div><table class='markup-table table '><tr><td>Atul</td><td>Suryawanshi</td><td>+91 123456789</td><td>My Address</td></tr><tr><td>Sujay</td><td>Thakur</td><td>+91 123456789</td><td>My Address</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="102"><span class="badge log fail-bg mr-2">Fail</span>Opencart Login</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartTags.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log fail-bg mr-2">Fail</span>Opencart Signup</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()">
+                <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartTags.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()">
+                <span>When User click on MyAccount dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()">
+                <span>Then User should see Login and Register buttons</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>When User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()">
+                <span>Then User should navigate to Opencart Login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)">
+                <span>When User enters "Atul" and "1234"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()">
+                <span>And User click on Login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()">
+                <span>Then User should navigate to Login success page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="124"><span class="badge log fail-bg mr-2">Fail</span>Opencart RegistrationTest</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="125"><span class="badge log fail-bg mr-2">Fail</span>Opencart RegistrationTest</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartTags.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters MobileAppTestUsername1 and MobileAppTestPassword1</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="130"><span class="badge log fail-bg mr-2">Fail</span>Opencart RegistrationTest</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartTags.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters MobileAppTestUsername2 and MobileAppTestPassword2</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="135"><span class="badge log fail-bg mr-2">Fail</span>Opencart RegistrationTest</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigate to Opencart website</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalStateException: The driver executable must exist: C:\Users\Admin\Desktop\Preplaced-Testing Academy\Preplaced Testing Workplace\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:161)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:156)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:42)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:315)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createServiceWithConfig(ChromeDriverService.java:165)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+	at StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website(OpencartLoginStepDefFile.java:30)
+	at ✽.User navigate to Opencart website(classpath:features/OpencartTags.feature:8)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters MobileAppTestUsername3 and MobileAppTestPassword3</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left">
+<li>
+<a href="">
+<span class="font-size-14">Exception</span>
+</a>
+</li>
+</ul>
+<ul class="tools text-right">
+<li>
+<a href="#">
+<span class="badge badge-primary">2</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="open-test">
+<div class="test-detail">
+<p class="name">java.lang.IllegalStateException</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.IllegalStateException</h4>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='16'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='27'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Signup</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='40'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='52'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Login with Valid Username and Password</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='63'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Login with Invalid Username and Password</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='74'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart registration</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='84'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='89'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='94'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='99'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='104'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='115'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart Signup</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='127'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='132'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='137'>Given User navigate to Opencart website</a>
+<div class="">
+<span class="badge badge-default">Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="open-test">
+<div class="test-detail">
+<p class="name">io.cucumber.java.PendingException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>io.cucumber.java.PendingException</h4>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Given User navigate to blazedemo site</a>
+<div class="">
+<span class="badge badge-default">Navigate and Click Test</span>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Given User navigate to blazedemo site</a>
+<div class="">
+<span class="badge badge-default">Navigate and Click Test</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul>
+<li>
+<a class="back-to-test" href="javascript:void(0)">
+<i class="fa fa-arrow-left"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">9</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@WebAppTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@WebAppTest</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='124'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='125'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='130'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='135'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@FeatureTestTag</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FeatureTestTag</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='102'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='113'>Opencart Signup</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Signup</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='125'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='130'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='135'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@MobileAppTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@MobileAppTest</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='124'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='125'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='130'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='135'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>15</span>
+</span>
+<p class="name">@FeatureTestTag2</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FeatureTestTag2</h4>
+<span status="fail" class='badge log badge-danger'>15 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='37'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='50'>Opencart Login with Valid Username and Password</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login with Valid Username and Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='61'>Opencart Login with Invalid Username and Password</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login with Invalid Username and Password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='72'>Opencart registration</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart registration</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='81'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='82'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='87'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='92'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='97'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='102'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='113'>Opencart Signup</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Signup</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='124'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='125'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='130'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='135'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@MobileTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@MobileTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='37'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@RegressionTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegressionTest</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='102'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='124'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='125'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='130'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='135'>Opencart RegistrationTest</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart RegistrationTest</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@SmokeTest</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SmokeTest</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='102'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='113'>Opencart Signup</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Signup</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@FeatureTestTag3</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FeatureTestTag3</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='82'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='87'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='92'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='97'>Opencart SignUp</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart SignUp</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SanityTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SanityTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:54:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='36' id='102'>Opencart Login</a>
+<div class="">
+<span class="badge badge-default">Opencart Application Login.Opencart Login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul>
+<li>
+<a class="back-to-test" href="javascript:void(0)">
+<i class="fa fa-arrow-left"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 5, 2023 09:54:38 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 5, 2023 09:54:39 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>17</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='20%'><b>17</b> steps failed,
+<b>64</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@WebAppTest</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@FeatureTestTag</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@MobileAppTest</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@FeatureTestTag2</td>
+<td>0</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@MobileTest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@RegressionTest</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SmokeTest</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@FeatureTestTag3</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SanityTest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Gayathri</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>CucumberProjectDemo</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Google Chrome</td>
+</tr>
+<tr>
+<td>os</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 17,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 17,
+warningGrandChild: 0,
+skipGrandChild: 64,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@5cf22a596531402644b8523470526952516f345f/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
